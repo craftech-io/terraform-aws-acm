@@ -16,6 +16,12 @@ variable "validation_allow_overwrite_records" {
   default     = true
 }
 
+variable "certificate_transparency_logging_preference" {
+  description = "Specifies whether certificate details should be added to a certificate transparency log"
+  type        = bool
+  default     = true
+}
+
 variable "wait_for_validation" {
   description = "Whether to wait for the validation to complete"
   type        = bool
