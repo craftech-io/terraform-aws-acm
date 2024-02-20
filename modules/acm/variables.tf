@@ -31,13 +31,13 @@ variable "certificate_transparency_logging_preference" {
 variable "domain_name" {
   description = "A domain name for which the certificate should be issued"
   type        = string
-  default     = "*.cdi2.korodrogerie.de"
+  default     = ""
 }
 
 variable "subject_alternative_names" {
   description = "A list of domains that should be SANs in the issued certificate"
   type        = list(string)
-  default     = ["*.cdi2.koro-shop.com", "*.cdi2.koro.ie", "asd.cdi2.koro.ie"]
+  default     = [""]
 }
 
 variable "validation_method" {
@@ -49,7 +49,7 @@ variable "validation_method" {
 variable "zone_id" {
   description = "The ID of the hosted zone to contain this record."
   type        = list(string)
-  default     = ["Z09485142T3CCUITNRYHU", "Z01846543BNDDIV2KMEJV", "Z0828588372KK89WM5FAI", "Z0828588372KK89WM5FAI"]
+  default     = [""]
 }
 
 variable "tags" {
