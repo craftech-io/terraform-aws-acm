@@ -37,7 +37,7 @@ variable "domain_name" {
 variable "subject_alternative_names" {
   description = "A list of domains that should be SANs in the issued certificate"
   type        = list(string)
-  default     = [""]
+  default     = []
 }
 
 variable "validation_method" {
@@ -49,7 +49,7 @@ variable "validation_method" {
 variable "zone_id" {
   description = "The ID of the hosted zone to contain this record."
   type        = list(string)
-  default     = [""]
+  default     = []
 }
 
 variable "tags" {
