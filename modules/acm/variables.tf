@@ -55,7 +55,7 @@ variable "zone_id" {
 variable "zones" {
   description = "Map containing the Route53 Zone IDs for additional domains."
   type        = map(string)
-  default = {}
+  default     = {}
 }
 
 variable "domain_name" {
