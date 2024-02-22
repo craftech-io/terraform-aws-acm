@@ -4,7 +4,7 @@ variable "use_existing_route53_zone" {
   default     = true
 }
 
-variable "domain" {
+variable "domain_name" {
   description = "Domain to be used for the tests"
   type        = string
   default     = "terraform-aws-modules.modules.tf"
@@ -14,4 +14,10 @@ variable "extra_domain" {
   description = "Extr adomain to be used for the tests"
   type        = string
   default     = "extra.terraform-aws-modules.modules.tf"
+}
+
+variable "aws_region" {
+  description = "The AWS Region where this VPC will exist."
+  type        = string
+  default     = "us-east-1"
 }
