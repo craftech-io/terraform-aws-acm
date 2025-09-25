@@ -1,7 +1,0 @@
-repos:
-  - repo: git@github.com:craftech-io/pre-commit.git   # or https://github.com/craftech-io/pre-commit.git
-    rev: v0.4.0
-    hooks:
-      - id: terraform-fmt
-      - id: terraform-validate
-        verbose: true
